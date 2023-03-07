@@ -16,14 +16,14 @@ struct ContentView: View {
         VStack {
             Button(action: {
                 guard let magic = magic else { return }
-                let configuration = LoginWithMagicLinkConfiguration(email: "PLACE_YOUR_EMAIL_HERE")
+                let configuration = LoginWithEmailOTPConfiguration(email: "PLACE_YOUR_EMAIL_HERE")
 
-                magic.auth.loginWithMagicLink(configuration, response: { response in
+                magic.auth.loginWithEmailOTP(configuration, response: { response in
                     guard let result = response.result else { return print("Error:", response.error.debugDescription) }
                     print("Result", result)
                 })
             }) {
-                Text(String(count))
+                Text("Login")
                     .padding(8)
                     .foregroundColor(Color.white)
                     .background(Color.black)
