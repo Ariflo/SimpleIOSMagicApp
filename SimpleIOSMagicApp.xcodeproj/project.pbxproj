@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB5358BC29B815500005DCEB /* MagicExt-OIDC in Frameworks */ = {isa = PBXBuildFile; productRef = AB5358BB29B815500005DCEB /* MagicExt-OIDC */; };
+		AB5358BE29B816DA0005DCEB /* MagicExt-OAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AB5358BD29B816DA0005DCEB /* MagicExt-OAuth */; };
 		AB5D018529B7FAC3001425E4 /* MagicSDK in Frameworks */ = {isa = PBXBuildFile; productRef = AB5D018429B7FAC3001425E4 /* MagicSDK */; };
 		ABCB4BDE297F4B5000A422A5 /* SimpleIOSMagicAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCB4BDD297F4B5000A422A5 /* SimpleIOSMagicAppApp.swift */; };
 		ABCB4BE0297F4B5000A422A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCB4BDF297F4B5000A422A5 /* ContentView.swift */; };
@@ -28,18 +30,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB5358BE29B816DA0005DCEB /* MagicExt-OAuth in Frameworks */,
 				AB5D018529B7FAC3001425E4 /* MagicSDK in Frameworks */,
+				AB5358BC29B815500005DCEB /* MagicExt-OIDC in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB5358BA29B815500005DCEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ABCB4BD1297F4B5000A422A5 = {
 			isa = PBXGroup;
 			children = (
 				ABCB4BDC297F4B5000A422A5 /* SimpleIOSMagicApp */,
 				ABCB4BDB297F4B5000A422A5 /* Products */,
+				AB5358BA29B815500005DCEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +101,8 @@
 			name = SimpleIOSMagicApp;
 			packageProductDependencies = (
 				AB5D018429B7FAC3001425E4 /* MagicSDK */,
+				AB5358BB29B815500005DCEB /* MagicExt-OIDC */,
+				AB5358BD29B816DA0005DCEB /* MagicExt-OAuth */,
 			);
 			productName = SimpleIOSMagicApp;
 			productReference = ABCB4BDA297F4B5000A422A5 /* SimpleIOSMagicApp.app */;
@@ -370,7 +384,7 @@
 			repositoryURL = "https://github.com/magiclabs/magic-ios";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 7.0.0;
+				minimumVersion = 8.0.0;
 			};
 		};
 		ABCDB48929B6812A000076B0 /* XCRemoteSwiftPackageReference "magic-ios-ext" */ = {
@@ -378,12 +392,22 @@
 			repositoryURL = "https://github.com/magiclabs/magic-ios-ext";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 2.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		AB5358BB29B815500005DCEB /* MagicExt-OIDC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ABCDB48929B6812A000076B0 /* XCRemoteSwiftPackageReference "magic-ios-ext" */;
+			productName = "MagicExt-OIDC";
+		};
+		AB5358BD29B816DA0005DCEB /* MagicExt-OAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ABCDB48929B6812A000076B0 /* XCRemoteSwiftPackageReference "magic-ios-ext" */;
+			productName = "MagicExt-OAuth";
+		};
 		AB5D018429B7FAC3001425E4 /* MagicSDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AB5D018329B7FAC3001425E4 /* XCRemoteSwiftPackageReference "magic-ios" */;
