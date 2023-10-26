@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ObservableObject {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         // assign the newly created Magic instance to shared property
-        Magic.shared = Magic(apiKey: "YOUR_PUBLISHABLE_API_KEY_HERE")
+        Magic.shared = Magic(apiKey: "pk_live_D5EA1E346A791DB7")
 
         // do any other necessary launch configuration
         return true

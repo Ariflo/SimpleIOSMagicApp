@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB5358BC29B815500005DCEB /* MagicExt-OIDC in Frameworks */ = {isa = PBXBuildFile; productRef = AB5358BB29B815500005DCEB /* MagicExt-OIDC */; };
-		AB5358BE29B816DA0005DCEB /* MagicExt-OAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AB5358BD29B816DA0005DCEB /* MagicExt-OAuth */; };
-		AB5D018529B7FAC3001425E4 /* MagicSDK in Frameworks */ = {isa = PBXBuildFile; productRef = AB5D018429B7FAC3001425E4 /* MagicSDK */; };
+		AB1928832AEAE2AC00934CEE /* MagicSDK in Frameworks */ = {isa = PBXBuildFile; productRef = AB1928822AEAE2AC00934CEE /* MagicSDK */; };
 		ABCB4BDE297F4B5000A422A5 /* SimpleIOSMagicAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCB4BDD297F4B5000A422A5 /* SimpleIOSMagicAppApp.swift */; };
 		ABCB4BE0297F4B5000A422A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCB4BDF297F4B5000A422A5 /* ContentView.swift */; };
 		ABCB4BE2297F4B5100A422A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABCB4BE1297F4B5100A422A5 /* Assets.xcassets */; };
@@ -30,9 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB5358BE29B816DA0005DCEB /* MagicExt-OAuth in Frameworks */,
-				AB5D018529B7FAC3001425E4 /* MagicSDK in Frameworks */,
-				AB5358BC29B815500005DCEB /* MagicExt-OIDC in Frameworks */,
+				AB1928832AEAE2AC00934CEE /* MagicSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,9 +96,7 @@
 			);
 			name = SimpleIOSMagicApp;
 			packageProductDependencies = (
-				AB5D018429B7FAC3001425E4 /* MagicSDK */,
-				AB5358BB29B815500005DCEB /* MagicExt-OIDC */,
-				AB5358BD29B816DA0005DCEB /* MagicExt-OAuth */,
+				AB1928822AEAE2AC00934CEE /* MagicSDK */,
 			);
 			productName = SimpleIOSMagicApp;
 			productReference = ABCB4BDA297F4B5000A422A5 /* SimpleIOSMagicApp.app */;
@@ -133,8 +127,8 @@
 			);
 			mainGroup = ABCB4BD1297F4B5000A422A5;
 			packageReferences = (
-				ABCDB48929B6812A000076B0 /* XCRemoteSwiftPackageReference "magic-ios-ext" */,
-				AB5D018329B7FAC3001425E4 /* XCRemoteSwiftPackageReference "magic-ios" */,
+				AB1928812AEAE2AC00934CEE /* XCRemoteSwiftPackageReference "magic-ios" */,
+				AB1928852AEAE6BE00934CEE /* XCRemoteSwiftPackageReference "magic-ios-ext" */,
 			);
 			productRefGroup = ABCB4BDB297F4B5000A422A5 /* Products */;
 			projectDirPath = "";
@@ -288,7 +282,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleIOSMagicApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 63MFVF97MU;
+				DEVELOPMENT_TEAM = 8RGN5V79T5;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -307,7 +301,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.magic.SimpleIOSMagicApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.magic.SimpleMagicApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -326,7 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleIOSMagicApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 63MFVF97MU;
+				DEVELOPMENT_TEAM = 8RGN5V79T5;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -345,7 +339,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.magic.SimpleIOSMagicApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.magic.SimpleMagicApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -379,38 +373,28 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		AB5D018329B7FAC3001425E4 /* XCRemoteSwiftPackageReference "magic-ios" */ = {
+		AB1928812AEAE2AC00934CEE /* XCRemoteSwiftPackageReference "magic-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/magiclabs/magic-ios";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 8.0.0;
+				minimumVersion = 9.1.1;
 			};
 		};
-		ABCDB48929B6812A000076B0 /* XCRemoteSwiftPackageReference "magic-ios-ext" */ = {
+		AB1928852AEAE6BE00934CEE /* XCRemoteSwiftPackageReference "magic-ios-ext" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/magiclabs/magic-ios-ext";
+			repositoryURL = "https://github.com/magiclabs/magic-ios-ext.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
+				minimumVersion = 2.0.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AB5358BB29B815500005DCEB /* MagicExt-OIDC */ = {
+		AB1928822AEAE2AC00934CEE /* MagicSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = ABCDB48929B6812A000076B0 /* XCRemoteSwiftPackageReference "magic-ios-ext" */;
-			productName = "MagicExt-OIDC";
-		};
-		AB5358BD29B816DA0005DCEB /* MagicExt-OAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = ABCDB48929B6812A000076B0 /* XCRemoteSwiftPackageReference "magic-ios-ext" */;
-			productName = "MagicExt-OAuth";
-		};
-		AB5D018429B7FAC3001425E4 /* MagicSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AB5D018329B7FAC3001425E4 /* XCRemoteSwiftPackageReference "magic-ios" */;
+			package = AB1928812AEAE2AC00934CEE /* XCRemoteSwiftPackageReference "magic-ios" */;
 			productName = MagicSDK;
 		};
 /* End XCSwiftPackageProductDependency section */

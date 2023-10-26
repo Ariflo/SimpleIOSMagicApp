@@ -16,7 +16,7 @@ struct ContentView: View {
         VStack {
             Button(action: {
                 guard let magic = magic else { return }
-                let configuration = LoginWithEmailOTPConfiguration(email: "PLACE_YOUR_EMAIL_HERE")
+                let configuration = LoginWithEmailOTPConfiguration(email: "arian.flores@magic.link")
 
                 magic.auth.loginWithEmailOTP(configuration, response: { response in
                     guard let result = response.result else { return print("Error:", response.error.debugDescription) }

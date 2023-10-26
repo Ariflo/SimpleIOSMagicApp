@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/krzyzanowskim/CryptoSwift.git",
       "state" : {
-        "revision" : "95c18f1c1bc44d5547728621ed680850368f7a45",
-        "version" : "1.7.0"
+        "revision" : "db51c407d3be4a051484a141bf0bff36c43d3b1e",
+        "version" : "1.8.0"
       }
     },
     {
@@ -23,17 +23,17 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/magiclabs/magic-ios",
       "state" : {
-        "revision" : "e00b89d6dced2ea347f0cfec436f66da80addb26",
-        "version" : "8.0.1"
+        "revision" : "c172428dc6fdaea85582a5cdb27c6414ad89b270",
+        "version" : "9.1.1"
       }
     },
     {
       "identity" : "magic-ios-ext",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/magiclabs/magic-ios-ext",
+      "location" : "https://github.com/magiclabs/magic-ios-ext.git",
       "state" : {
-        "revision" : "f5635797f6b8224bb212d21fef56b8b190a58ce1",
-        "version" : "2.0.1"
+        "revision" : "3261b73228fbd1a5f8c72391312747acb311a9c0",
+        "version" : "2.0.2"
       }
     },
     {
